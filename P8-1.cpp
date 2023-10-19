@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+
 //function prototype
 int countVowel(string str);
 
