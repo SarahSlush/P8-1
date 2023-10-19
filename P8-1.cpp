@@ -3,7 +3,7 @@
 using namespace std;
 
 //function prototype
-int countCharacter(string str);
+int countVowel(string str);
 
 int main() {
 	string input;
@@ -13,16 +13,16 @@ int main() {
 		getline(cin, input);
 		if (input == "Q") break;
 
-		cout << " " << countCharacter(input)<< endl;
+		cout << " " << countVowel(input)<< endl;
 	}
 	return 0;
 }
 
 //funcation declarations
-int countCharacter(string str) {
+int countVowel(string str) {
 	int n = 0;
 	for (char c : str) {
-		n++;
+		if (c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o' || c == 'O' || c == 'u' || c == 'U') n++;
 	}
 	return n;
 }
